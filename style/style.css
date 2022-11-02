@@ -1,0 +1,44 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+.task{
+  margin: 30px 10%;
+  padding: 10px;
+  background-color: rgb(180, 225, 255);
+  border: 1px solid black;
+  border-radius: 15px;
+}
+header{
+  margin: 30px 10%;
+  padding: 10px;
+  background-color: rgb(180, 225, 255);
+  border: 1px solid black;
+  border-radius: 15px;
+  text-align: center;
+}
+.grid{
+  display: grid;
+  grid-template-columns: 3fr 4fr;
+  margin: 10px;
+}
+.grid h1{
+  padding: 0 10px;
+}
+.grid h1:nth-child(odd){
+  text-align: right;
+}
+.grid h1:nth-child(even){
+  text-align: left;
+}
+h1{
+  text-align: center;
+  font-size: 35px;
+}
+h2{
+  text-align: center;
+  font-size: 25px;
+}
+p{
+  font-size: 20px;
+}
