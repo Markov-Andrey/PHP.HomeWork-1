@@ -28,20 +28,38 @@
       <h2>2022 г.</h2>
     </header>
       <?php
-        $taskNumber = 0; //номер задания
-        $divStart = '<div class="task">'.
-          '<h1>Task '.++$taskNumber.'</h1>'; //новый див
-        $divEnd = '</div>';
+        function task($arg){
+          if ($arg == 'start'){
+            static $taskNum = 0;
+            $taskNum++;
+            echo ('<div class="task"><h1>Задание '. $taskNum .'</h1>');
+          };
+          if ($arg == 'end') echo ('</div>');
+        };
 
-        echo $divStart;
+        task('start');
         $a = 10;
         $b = 2;
-        echo ('<p>Сумма: '.$a + $b.'</p>');
-        echo ('<p>Разность: '.$a - $b.'</p>');
-        echo ('<p>Произведение: '.$a * $b.'</p>');
-        echo ('<p>Частное: '.$a / $b.'</p>');
-        echo $divEnd;
+        echo ('<p>Число a: '.$a.'</p>');
+        echo ('<p>Число b: '.$b.'</p>');
+        echo ('<p>------------</p>');
+        echo ('<p>Сумма: '.$c = $a + $b.'</p>');
+        echo ('<p>Разность: '.$c = $a - $b.'</p>');
+        echo ('<p>Произведение: '.$c = $a * $b.'</p>');
+        echo ('<p>Частное: '.$c = $a / $b.'</p>');
+        task('end');
+
+        task('start');
+        task('end');
+        task('start');
+        task('end');
+        task('start');
+        task('end');
+        task('start');
+        task('end');
+        
       ?>
+      
 </body>
 
 </html>
