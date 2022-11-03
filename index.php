@@ -100,6 +100,19 @@
     task('end');
 
     task('start');
+      $num = 12345;
+      $nstr = $num . "";
+      $sum = 0;
+      for ($i = 0; $i < strlen($nstr); ++$i)
+      {
+          $sum += $nstr[$i];
+      }
+      add('Значение num = '.$num);
+      add('------------');
+      add('Результат суммы цифр числа: '.$sum);
+    task('end');
+
+    task('start');
       $todayYear = date("Y"); //текущий год
       $todayMonth = date("n"); //текущий месяц
       $todayDay = date("j"); //текущий день
@@ -121,6 +134,7 @@
       add('Прошло дней с 01.01.2000 года: '.$day.' дней');
       add('Прошло лет с 01.01.2000 года: '.$year.' года');
     task('end');
+
 
   ?>
   
