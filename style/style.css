@@ -2,17 +2,21 @@
   margin: 0;
   padding: 0;
 }
+body{
+  background-color: rgb(180, 225, 255);
+}
+div, header{
+  background: rgb(254, 255, 237);
+}
 .task{
   margin: 30px 10%;
   padding: 10px;
-  background-color: rgb(180, 225, 255);
   border: 1px solid black;
   border-radius: 15px;
 }
 header{
   margin: 30px 10%;
   padding: 10px;
-  background-color: rgb(180, 225, 255);
   border: 1px solid black;
   border-radius: 15px;
   text-align: center;

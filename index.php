@@ -50,11 +50,24 @@
         task('end');
 
         task('start');
+        $x = 2;
+        $y = 6;
+        $z = 9;
+        echo ('<p>Число x: '.$x.'</p>');
+        echo ('<p>Число y: '.$y.'</p>');
+        echo ('<p>Число z: '.$z.'</p>');
+        echo ('<p>------------</p>');
+        $c = (($x + 1)*4 - 2*($z - 2 * pow($x,2) + pow($y,2)));
+        echo ('<p>(x + 1)*4 - 2*(z - 2 * x^2) + y^2))</p>');
+        echo ('<p>Результат матем.выражения: '.$c.'</p>');
         task('end');
+
         task('start');
         task('end');
+
         task('start');
         task('end');
+
         task('start');
         task('end');
         
