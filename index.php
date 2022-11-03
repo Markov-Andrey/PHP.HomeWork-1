@@ -38,53 +38,58 @@
       if ($arg == 'end') echo ('</div>');
     };
 
+    //функция автодобавления Echo со вложенным тегом <p>
+    function addText($text){
+      echo ('<p>'.$text.'</p>');
+    };
+
     task('start');
       $a = 10;
       $b = 2;
-      echo ('<p>Число a = '.$a.'</p>');
-      echo ('<p>Число b = '.$b.'</p>');
-      echo ('<p>------------</p>');
-      echo ('<p>Сумма: '.($a + $b).'</p>');
-      echo ('<p>Разность: '.($a - $b).'</p>');
-      echo ('<p>Произведение: '.($a * $b).'</p>');
-      echo ('<p>Частное: '.($a / $b).'</p>');
+      addText('Число a = '.$a);
+      addText('Число b = '.$b);
+      addText('------------');
+      addText('Сумма: '.($a + $b));
+      addText('Разность: '.($a - $b));
+      addText('Произведение: '.($a * $b));
+      addText('Частное: '.($a / $b));
     task('end');
 
     task('start');
       $x = 2;
       $y = 6;
       $z = 9;
-      echo ('<p>Число x = '.$x.'</p>');
-      echo ('<p>Число y = '.$y.'</p>');
-      echo ('<p>Число z = '.$z.'</p>');
-      echo ('<p>------------</p>');
+      addText('Число x = '.$x);
+      addText('Число y = '.$y);
+      addText('Число z = '.$z);
+      addText('------------');
       $c = (($x + 1)*4 - 2*($z - 2 * pow($x,2) + pow($y,2)));
-      echo ('<p>(x + 1)*4 - 2*(z - 2 * x^2) + y^2))</p>');
-      echo ('<p>Результат матем.выражения: '.$c.'</p>');
+      addText('(x + 1)*4 - 2*(z - 2 * x^2) + y^2))');
+      addText('Результат матем.выражения: '.$c);
     task('end');
 
     task('start');
       $a = 17;
       $b = 10;
       $d = 7;
-      echo ('<p>Число a = '.$a.'</p>');
-      echo ('<p>Число b = '.$b.'</p>');
-      echo ('<p>Число d = '.$d.'</p>');
-      echo ('<p>------------</p>');
-      echo ('<p>c = a - b</p>');
-      echo ('<p>result = c + d</p>');
+      addText('Число a = '.$a);
+      addText('Число b = '.$b);
+      addText('Число d = '.$d);
+      addText('------------');
+      addText('c = a - b');
+      addText('result = c + d');
       $c = $a - $b;
       $result = $c + $d;
-      echo ('<p>Результат матем.выражения: '.$result.'</p>');
+      addText('Результат матем.выражения: '.$result);
     task('end');
 
     task('start');
       $text1 = 'Привет, ';
       $text2 = 'Мир!';
-      echo ('<p>Значение text1 = '.$text1.'</p>');
-      echo ('<p>Знаечение text2 = '.$text2.'</p>');
-      echo ('<p>------------</p>');
-      echo ('<p>Результат: '.$text1.$text2.'</p>');
+      addText('Значение text1 = '.$text1);
+      addText('Значение text2 = '.$text2);
+      addText('------------');
+      addText('Результат: '.$text1.$text2);
     task('end');
 
     task('start');
